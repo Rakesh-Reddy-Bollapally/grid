@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 10px;
+
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height:100vh;
+            grid-template-areas: 'item1 item1 item2 item3'
+                                 'item4 item5 item2 item6'
+                                 ' item7 item5 item10 item10'
+                                 ' item8 item9 item10 item10';
+            gap:5px;
+
+        }
+        .item1{
+            grid-area: item1;
+            border-radius: 20px;
+        }
+        .item2{
+            grid-area: item2;
+        }
+        .item3{
+            grid-area: item3;
+        }
+        .item4{
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+        .item6{
+            grid-area: item6;
+        }
+        .item7{
+            grid-area: item7;
+        }
+        .item8{
+            grid-area: item8;
+        }
+        .item9{
+            grid-area: item9;
+        }
+        .item10{
+            grid-area: item10;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container>div{
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            margin-bottom: 20px;
+            padding:10px
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>IMAGE GALLERY USING GRID</h1>
+    <div class="container">
+        
+        <div class="item1"><img src="https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg" alt=""></div>
+        <div class="item2"><img src="https://images.unsplash.com/photo-1582949410733-69ffcd2d9aba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+        <div class="item3"><img src="https://w0.peakpx.com/wallpaper/370/342/HD-wallpaper-road-to-nature-cool-dark-forest-mountain-nature-road-roads-travel-usa.jpg" alt=""></div>
+        <div class="item4"><img src="https://static01.nyt.com/images/2022/11/03/travel/03travel-dark-tourism-woods/03travel-dark-tourism-woods-videoSixteenByNineJumbo1600.jpg" alt=""></div>
+        <div class="item5"><img src="https://c4.wallpaperflare.com/wallpaper/765/992/4/road-in-black-and-white-wallpaper-preview.jpg" alt=""></div>
+        <div class="item6"><img src="https://images.unsplash.com/photo-1672841828482-45faa4c70e50?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyb3BpY2FsJTIwaXNsYW5kfGVufDB8fDB8fHww" alt=""></div>
+        <div class="item7"><img src="https://w0.peakpx.com/wallpaper/962/12/HD-wallpaper-dark-adventures-car-dark-clouds-fahadnoor090-forest-r-dark-r-nature-ranger-travel-pics-wild-life.jpg" alt=""></div>
+        <div class="item8"><img src="https://thumbs.dreamstime.com/b/silhouette-photographer-shoots-photo-hot-air-balloon-71651561.jpg" alt=""></div>
+        <div class="item9"><img src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt=""></div>
+        <div class="item10"><img src="https://c4.wallpaperflare.com/wallpaper/654/495/649/motivational-black-background-typography-wallpaper-preview.jpg" alt=""></div>
+    </div>
+</body>
+</html>
